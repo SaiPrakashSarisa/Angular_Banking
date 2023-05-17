@@ -1,0 +1,42 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav {
+  height: 10%;
+  display: flex;
+  background-color: #ddd0c8;
+  color: #323232;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  float: left;
+}
+.nav ul h4 {
+  background-color: #323232;
+  color: #ddd0c8;
+}
+.nav ul li {
+  padding: 25px;
+  list-style: none;
+}
+
+.nav .navElement li:hover {
+  background-color: #323232;
+  color: #ddd0c8;
+}
+
+.nav .navElement a {
+  text-decoration: none;
+  color: #323232;
+}
+
+.nav .profile {
+  float: right;
+  display: flex;
+  align-items: center;
+  /* background-color: grey; */
+}

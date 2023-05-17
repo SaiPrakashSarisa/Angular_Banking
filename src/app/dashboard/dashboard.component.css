@@ -1,0 +1,43 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.dashboard {
+  height: 85%;
+  background: linear-gradient(to right, #709ebd, #2c3e50);
+  overflow: scroll;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards {
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* background-color: aquamarine; */
+  position: relative;
+}
+
+.card {
+  margin: 20px 20px 20px 20px;
+  height: 350px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /* background-color: yellowgreen; */
+}
+
+.card h1 {
+  position: absolute;
+  z-index: 10px;
+  color: white;
+}
+.card img {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  z-index: 0;
+  opacity: 0.6;
+}
