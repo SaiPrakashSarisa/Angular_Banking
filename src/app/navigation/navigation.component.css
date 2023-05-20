@@ -7,19 +7,21 @@
   height: 10%;
   display: flex;
   background-color: #ddd0c8;
+  justify-content: space-between;
   color: #323232;
+  position: sticky;
 }
 
-.nav ul {
+.nav .navElement {
   display: flex;
   align-items: center;
   float: left;
 }
-.nav ul h4 {
+.nav .navElement h4 {
   background-color: #323232;
   color: #ddd0c8;
 }
-.nav ul li {
+.nav .navElement li {
   padding: 25px;
   list-style: none;
 }
@@ -35,8 +37,46 @@
 }
 
 .nav .profile {
-  float: right;
   display: flex;
   align-items: center;
-  /* background-color: grey; */
+  margin-right: 20px;
+}
+
+button {
+  margin-left: 20px;
+  height: 25px;
+  width: 25px;
+  border-radius: 18px;
+  background-color: #323232;
+  border-color: transparent;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+}
+.content {
+  display: none;
+  position: absolute;
+  background-color: #323232;
+  color: #ddd0c8;
+  right: 0px;
+}
+
+.profileOptions li {
+  padding: 8px;
+  min-width: 70px;
+  list-style: none;
+  background-color: #323232;
+}
+
+.profileOptions li:hover {
+  background-color: #ddd0c8;
+  color: #323232;
+  cursor: pointer;
+}
+
+.dropdown:hover .content {
+  display: block;
 }
